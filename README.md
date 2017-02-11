@@ -11,7 +11,7 @@ Preparing
 How it works?
 =====
 * **server.js** provides nodejs server code. we can use **node server** to start this server which is listening with the port 3000.
-![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/Screenshot%20from%202017-02-10%2017-17-20.png "Start Server")
+![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/startserver.png "Start Server")
 
 * use the url [http://localhost:3000/submit-event.html](http://localhost:3000/submit-event.html) to visit the web page.
 
