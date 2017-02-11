@@ -12,18 +12,18 @@ How it works?
 =====
 * **server.js** provides nodejs server code. we can use **node server** to start this server which is listening with the port **3000**.
 
-![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/startserver.png "Start Server")
+ ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/startserver.png "Start Server")
 
 * use the url [http://localhost:3000/submit-event.html](http://localhost:3000/submit-event.html) to visit the web page.
 
-![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/visit.png "Visit web")
+ ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/visit.png "Visit web")
 
 * fill **Login UserName** as **admin**, and then click **submit** button, this page will submit a request to **http://localhost:3000/formlogin** with the parameter **{username:admin}**. **formlogin** is the action of form in _submit-event.html_.
 
-![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/submit.png "submit")
+ ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/submit.png "submit")
 
 * in line 15 of _server.js_ could catch the url end with **formlogin**. In the callback function, we can use **req.body** to get all the request parameters. In this example, I saved the requested parameters to a file named _data.json_.
 
-![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/server.png "SErver")
+ ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/server.png "SErver")
 
 * look at the file _data.json_, we can find the contents we just input in the Login UserName textbox.
