@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var jsonfile = require('jsonfile')
+var search_res = require("./search_res.js");
 app.use(express.static(__dirname + "/html"));
 
 // to support JSON-encoded bodies
@@ -17,6 +18,15 @@ app.post("/formlogin", function(req, res) {
     jsonfile.writeFile(file, req.body, function(err) {
         console.error(err)
     })
+});
+
+
+app.get("/getdata", function(req, res) {
+    console.log(req.body);
+    // jsonfile.writeFile(file, req.body, function(err) {
+    //     console.error(err)
+    // })
+    search_res.readfile(res);
 });
 
 app.listen(3000);
