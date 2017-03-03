@@ -6,8 +6,10 @@ Get Data From Server
 
  ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/startserver.png "Start Server")
 * Visit the url [http://localhost:3000/search_res.html](http://localhost:3000/search_res.html)
+
  ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/search_res.png "Start Server")
 * Click the button **Get Data From Server**. It will display the data responsed from the server.
+
  ![alt text](https://github.com/jilianggqq/AWS_DrWang/blob/master/pictures/serverdata.png "Start Server")
 
 Preparing
